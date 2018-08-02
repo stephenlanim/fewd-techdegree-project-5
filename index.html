@@ -4,15 +4,50 @@
     <meta charset="utf-8">
     <title>Interactive Photo Gallery: Stephen's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    
+    <main>
+      <!-- Search -->
+      <input id="" type="search" name="user_search" placeholder="Search(16pt)">
+      <!-- Photo Gallery -->
+      <div class="photo-gallery">
+        <!-- Photo 1 -->
+        <a class="thumbnail" href="images/full-size/01.jpg" data-lightbox="nature-album" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." data-alt="Hay Bales."><img src="images/thumbnails/01.jpg" alt="Hay Bales."></a>
+        <!-- Photo 2 -->
+        <a class="thumbnail" href="images/full-size/02.jpg" data-lightbox="nature-album" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here." data-alt="Lake."><img src="images/thumbnails/02.jpg" alt="Lake."></a>
+        <!-- Photo 3 -->
+        <a class="thumbnail" href="images/full-size/03.jpg" data-lightbox="nature-album" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below." data-alt="Canyon."><img src="images/thumbnails/03.jpg" alt="Canyon."></a>
+        <!-- Photo 4 -->
+        <a class="thumbnail" href="images/full-size/04.jpg" data-lightbox="nature-album" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." data-alt="Iceberg."><img src="images/thumbnails/04.jpg" alt="Iceberg."></a>
+        <!-- Photo 5 -->
+        <a class="thumbnail" href="images/full-size/05.jpg" data-lightbox="nature-album" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." data-alt="Desert."><img src="images/thumbnails/05.jpg" alt="Desert."></a>
+        <!-- Photo 6 -->
+        <a class="thumbnail" href="images/full-size/06.jpg" data-lightbox="nature-album" data-title="Fall is coming, I love when the leaves on the trees start to change color." data-alt="Fall."><img src="images/thumbnails/06.jpg" alt="Fall."></a>
+        <!-- Photo 7 -->
+        <a class="thumbnail" href="images/full-size/07.jpg" data-lightbox="nature-album" data-title="I drove past this plantation yesterday, everything is so green!" data-alt="Plantation."><img src="images/thumbnails/07.jpg" alt="Plantation."></a>
+        <!-- Photo 8 -->
+        <a class="thumbnail" href="images/full-size/08.jpg" data-lightbox="nature-album" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!" data-alt="Dunes."><img src="images/thumbnails/08.jpg" alt="Dunes."></a>
+        <!-- Photo 9 -->
+        <a class="thumbnail" href="images/full-size/09.jpg" data-lightbox="nature-album" data-title="We enjoyed a quiet stroll down this countryside lane." data-alt="Countryside Lane."><img src="images/thumbnails/09.jpg" alt="Countryside Lane."></a>
+        <!-- Photo 10 -->
+        <a class="thumbnail" href="images/full-size/10.jpg" data-lightbox="nature-album" data-title="Sunset at the coast! The sky turned a lovely shade of orange." data-alt="Sunset."><img src="images/thumbnails/10.jpg" alt="Sunset."></a>
+        <!-- Photo 11 -->
+        <a class="thumbnail" href="images/full-size/11.jpg" data-lightbox="nature-album" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking." data-alt="Cave."><img src="images/thumbnails/11.jpg" alt="Cave."></a>
+        <!-- Photo 12 -->
+        <a class="thumbnail" href="images/full-size/12.jpg" data-lightbox="nature-album" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." data-alt="Bluebells."><img src="images/thumbnails/12.jpg" alt="Bluebells."></a>
+
+      </div>
+
+    </main>
 
 
     <!-- ==============================
-      Photo Gallery Scripts
+     Scripts
     =================================== -->
-    <script src="js/photo-gallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>

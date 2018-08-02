@@ -1,0 +1,22 @@
+// ======================================
+//  Variables
+// ======================================
+
+// Fonts
+$font-stack: "Nunito", sans-serif;
+
+// Breakpoints (Sass map)
+$breakpoints: (
+  "xs": 599px, // smartphone width (normally 599px)
+  "sm": 600px, // tablet portrait (normally 600px)
+  "med": 900px, // tablet landscape
+  "lg": 1200px, // desktop
+);
+
+// Colors
+$text-color: #555;
+$color-primary: #58e1c1;
+$color-secondary: #51ddfc;
+
+//Transitions
+$cub-bez: cubic-bezier(.5,-0.5,.5,1.5);

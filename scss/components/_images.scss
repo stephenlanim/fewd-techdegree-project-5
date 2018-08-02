@@ -1,0 +1,7 @@
+/* ======================================
+    Image Styles
+   ====================================== */
+.thumbnail img {
+  @include border;
+  @include shadow;
+}

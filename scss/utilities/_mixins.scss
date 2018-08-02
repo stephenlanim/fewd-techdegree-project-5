@@ -1,0 +1,80 @@
+// ======================================
+//  Mixins
+// ======================================
+
+// === Media Queries ===
+@mixin mq($break) {
+  // Variables for grabbing $breakpoints Sass map values
+  $value: map-get($breakpoints, $break);
+  $sm: map-get($breakpoints, "sm");
+
+  // Check for errors
+  @if $value == null {
+    @error "'#{$break}' is not a valid breakpoint name.";
+    // @warn "'#{$break}' is not a valid breakpoint name.";
+  }
+
+  // Use "max-width" if value passed to $break is less than "sm" (i.e. smaller than tablet portrait)
+  @else if $value < $sm {
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+
+  // Use "min-width" if value passed to $break is anything larger than "xs" (i.e. smartphone width)
+  @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+
+} // End of mq mixin
+
+// === Transition ===
+@mixin transition (
+  // Variables
+  $prop:all,
+  $dur: 0.25s,
+  $tim: ease-in) {
+    // Properties
+  transition-property: $prop;
+  transition-duration: $dur;
+  transition-timing-function: $tim;
+}
+
+// === Flexbox ===
+@mixin flexbox(
+  // Variables
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null,) {
+  // Properties
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+// == Layout ==
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// == Borders & Boxes ==
+@mixin border (
+  // Variables
+  $bd-color: $color-primary,
+  $bd-radius: 5px,
+  $bd-style: solid) {
+    // Properties
+  border-color: $bd-color;
+  border-radius: $bd-radius;
+  border-style: $bd-style;
+}
+
+@mixin shadow {
+  box-shadow: 2px 2px 10px 0px rgba(46,61,73,0.2),
+    -2px 0px 10px 0px rgba(46,61,73,0.2);;
+}
