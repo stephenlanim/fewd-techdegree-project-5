@@ -4,16 +4,9 @@
 .thumbnail img {
   @include border;
   @include shadow;
-}
-
-/* Lightbox overrides to fit image width to screen size */
-.lb-image, .lb-dataContainer {
- max-width: 100%;
- height: auto !important;
- width: 100%;
-}
-
-.lb-outerContainer {
- max-width: 100%;
- height: auto !important;
+  @include transition($tim: $cub-bez, $dur: 0.2s);
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
 }

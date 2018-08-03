@@ -1,11 +1,22 @@
 // ======================================
 //  Inputs
 // ======================================
-
 input {
   @include center;
   @include border($bd-color: $color-secondary);
+  font-size: 1.4rem;
   display: block;
   padding: 0.5rem;
   margin-bottom: 1rem;
+  width: 90%;
+  @include mq('sm') {
+    width: 60%;
+  }
+  @include mq('med') {
+    font-size: 1.2rem;
+    width: 50%;
+  }
+  @include mq('lg') {
+    width: 40%;
+  }
 }

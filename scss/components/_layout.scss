@@ -11,10 +11,21 @@ main {
 }
 
 .photo-gallery {
-  @include flexbox($dir:row, $wrap:wrap, $just:space-evenly);
-  align-items: center;
+  overflow: visible;
+  @include mq('sm') {
+    @include flexbox($dir:row, $wrap:wrap, $just:space-evenly);
+    align-items: center;
+  }
 }
 
 .thumbnail {
   margin: 2rem;
+  @include mq('xs') {
+    &,
+    & img {
+      display: block;
+      @include center;
+      width: 80%;
+    }
+  }
 }
