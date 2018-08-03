@@ -10,27 +10,11 @@ main {
   max-width: 1200px;
 }
 
-.centered {
-  @include center;
-}
-
 .photo-gallery {
-  // @include center;
-  // padding: 1rem;
-}
-
-@include mq("sm"){
-  .photo-gallery {
-    @include flexbox($dir:row, $wrap:wrap, $just:space-evenly);
-    align-items: center;
-  }
+  @include flexbox($dir:row, $wrap:wrap, $just:space-evenly);
+  align-items: center;
 }
 
 .thumbnail {
-  // flex-basis: 25%;
-  // display: inline-block;
-  // margin-bottom: 1rem;
   margin: 2rem;
-  // width: 25%;
-  // @include center;
 }
