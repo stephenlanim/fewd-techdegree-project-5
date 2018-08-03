@@ -21,5 +21,5 @@ $search.on('keyup', function () {
     else {
       $(this).hide();
     }
-  })
+  });
 });

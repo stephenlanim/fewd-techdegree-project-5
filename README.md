@@ -10,5 +10,6 @@ This project involved:
 - Site was tested in Chrome for Mac, Firefox for Mac, and Apple Safari.
 - HTML validated via the W3C Markup Validation Service.
 - CSS validated via the W3C CSS Validation Service.
+- JS checked via JS Hint and JS console in aforementioned browsers.
 
 Live page: https://stephenlanim.github.io/fewd-techdegree-project-5/
